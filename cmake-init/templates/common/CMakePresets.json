@@ -115,7 +115,7 @@
       "name": "ci-linux",
       "description": "Includes fortification with the CMake default release flags",
       "inherits": ["flags-gcc-clang", "ci-std"],
-      "generator": "Unix Makefiles",
+      "generator": "Ninja",
       "hidden": true,
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release",
@@ -126,7 +126,7 @@
     {
       "name": "ci-darwin",
       "inherits": ["flags-appleclang", "ci-std"],
-      "generator": "Xcode",
+      "generator": "Ninja",
       "hidden": true{% if pm %},
       "cacheVariables": {
         "CMAKE_CATCH_DISCOVER_TESTS_DISCOVERY_MODE": "PRE_TEST"

@@ -13,3 +13,4 @@ compile_commands.json{% if conan %}
 conan_cache_*.tgz{% end %}{% if lib and not pm %}
 env.bat
 env.ps1{% end %}
+vcpkg_installed
